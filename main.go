@@ -40,24 +40,26 @@ func travel() {
 	}
 }
 
-func getTravelChoice() string {
-	var choice string
-	fmt.Println("Shall I randomly choose a planet for you to visit? (Y or N)")
-	fmt.Scan(&choice)
-	return choice
+func getResponseToPrompt(prompt string) string {
+	var name string
+	fmt.Println(prompt)
+	fmt.Scan(&response)
+	return response
 }
+
+// func getPlanetName(prompt string) string {
+// 	var name string
+// 	fmt.Println(prompt)
+// 	fmt.Scan(&name)
+// 	return name
+// }
 
 func travelToRandomPlanet() {
 	fmt.Println("Traveling to Jupiter...")
 	fmt.Println("Arrived at Jupiter. The large red spot appears ominous.")
 }
 
-func getPlanetName() string {
-	var name string
-	fmt.Println("Name the planet you would like to visit.")
-	fmt.Scan(&name)
-	return name
-}
+
 
 func travelToPlanet(planetName string) {
 	fmt.Printf("Traveling to %s...\n", planetName)
