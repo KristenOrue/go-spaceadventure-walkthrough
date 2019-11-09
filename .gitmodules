@@ -1,0 +1,3 @@
+[submodule "go-spaceadventure-walkthrough"]
+	path = go-spaceadventure-walkthrough
+	url = https://github.com/KristenOrue/go-spaceadventure-walkthrough.git
